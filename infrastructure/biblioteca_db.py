@@ -63,7 +63,6 @@ biblioteca = [
 
 
 def buscar_livros_db(termo=""):
-
     if not termo:
         return biblioteca
 
@@ -77,9 +76,7 @@ def buscar_livros_db(termo=""):
             resultados.append(livro)
     return resultados
 
-
 def buscar_por_categoria_db(categoria):
-
     resultados = []
     for livro in biblioteca:
         if str(livro["categoria"]).lower() == str(categoria).lower():
